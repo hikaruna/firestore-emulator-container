@@ -1,4 +1,4 @@
-FROM hikaruna/firebase-tools
+FROM hikaruna/firebase-tools:7.4.0
 
 # https://github.com/puckel/docker-airflow/issues/182#issuecomment-444683455
 RUN mkdir -p /usr/share/man/man1 \
