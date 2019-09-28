@@ -52,3 +52,20 @@ Default is
 $ touch ${your_dir}/firestore-debug.log
 $ docker run -it --rm -p 8080:8080 -p 8081:8081 -v ${your_dir}/firestore-debug.log:/app/firestore-debug.log hikaruna/firestore-emulator
 ```
+
+## slim Usage
+
+
+```console
+$ docker run -it --rm -p 8080:8080 hikaruna/firestore-emulator:slim
+```
+
+```console
+$ docker run -it --rm -p 8080:8080 hikaruna/firestore-emulator:slim --help
+```
+
+### customize firestore.rules
+
+```console
+$ docker run -it --rm -p 8080:8080 -p 8081:8081 -v ${your_dir}/firestore.rules:/firestore.rules hikaruna/firestore-emulator:slim --rules /firestore.rules
+```
